@@ -113,15 +113,15 @@
   /* Backgrounds */
   --color-bg: #fdfdfd;
   --color-bg-about: #f5f5f5;
-  --color-bg-footer: #f5f5f5;
+  --color-bg-footer: #282225;
   --color-bg-holding-page: rgba(82, 0, 255, 0.6);
   /* Headings */
   --h1-color: #0063f8;
-  --h2-color: #0063f8;
-  --h3-color: #0063f8;
+  --h2-color: #ffffff;
+  --h3-color: #282225;
   --h4-color: #0063f8;
   --h5-color: #0063f8;
-  --h6-color: #0063f8;
+  --h6-color: #ffffff;
   /* Special Text Colours */
   --color-text-holding-title: #0063f8;
   --color-text-project-category: #0063f8;
@@ -131,7 +131,7 @@
   --color-text-work-grid-title: #0063f8;
   /* Link States */
   --color-link: #0063f8;
-  --color-link-hover: #111;
+  --color-link-hover: #ffffff;
   --color-link-visited: #0063f8;
   /* Navigation */
   --color-nav-link: #0063f8;
@@ -946,7 +946,7 @@ a.nav-link-primary:hover {
   display: grid; /* Set to grid layout */
   grid-template-columns: 1fr; /* Single column layout for mobile and smaller screens */
   grid-gap: 3rem; /* Space between grid items */
-  background: var(--color-bg-about); /* Background color for the section */
+  background: #ffffff; /* Background color for the section */
   padding: var(--padding-small); /* Padding around the grid */
   flex: 1; /* Flex-grow to take up available space */
 }
@@ -1151,7 +1151,7 @@ a.nav-link-primary:hover {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  background: var(--color-bg-project-description);
+  background: #282225;
   padding: var(--padding-small);
   width: 100%;
   margin-bottom: 1rem; /* Space below the description */
