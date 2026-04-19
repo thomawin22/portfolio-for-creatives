@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Thomas Gagné | Error Page</title>
+    <title>404 error</title>
     <meta
       name="description"
-      content="404 broken link page. Calvin and hobbes dancing for you."
+      content="404 broken link page. A quote from Calvin & Hobbs about living in the moment in addition to a fun dancing gif."
     />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,7 @@
     <link
       rel="icon"
       type="image/png"
-      href="assets/branding-images/thomas-logo.svg"
+      href="assets/branding-images/thomasfinalogo.png"
     />
     <meta property="og:image" content="screenshot.jpg" />
     <link
@@ -54,6 +54,7 @@
             type="image/svg+xml"
             data="assets/temp/calvin and hobbes dance GIF.gif"
             class="error-page-animation"
+            alt="Calvin and Hobbes dancing together."
           ></object
         ></a>
 
@@ -65,12 +66,12 @@
         <h4>- Calvin</h4>
       </div>
     </section>
+
     <ul class="footer-global">
       <li class="footer-tagline">
         <h2>Let's Connect!</h2>
-        <p>Message me to discuss work, passion or for conversation</p>
+        <h6>Message me to discuss work, passion or for converstation</h6>
       </li>
-
       <li class="footer-highlights">
         <h2>Education</h2>
         <ul class="footer-awards-list">
@@ -105,16 +106,29 @@
 
       <li class="footer-full-width">
         <p><a href="#top">Smooth scroll to the top</a></p>
-        <p class="footer-fineprint">
-          &copy; <span id="copyright-years">2020-</span>. Hand crafted with
-          <span class="heart">❤</span>
-          by Thomas Gagné
-        </p>
+        <h6>Hand crafted by Thomas Gagné</h6>
         <script>
           document.getElementById("copyright-years").textContent +=
             new Date().getFullYear();
         </script>
       </li>
     </ul>
+
+    <div id="myID" class="bottomMenu hide"><a href="#">Back to top</a></div>
+
+    <script>
+      myID = document.getElementById("myID");
+
+      var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 800) {
+          myID.className = "bottomMenu show";
+        } else {
+          myID.className = "bottomMenu hide";
+        }
+      };
+
+      window.addEventListener("scroll", myScrollFunc);
+    </script>
   </body>
 </html>

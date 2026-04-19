@@ -2,23 +2,23 @@
 <html lang="en">
   <head>
     <title>
-      Free Creative Portfolio Template: October 2025 Version | Play Page
+       Photography
     </title>
     <meta
       name="description"
-      content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!"
+      content="Travel photography from various locations"
     />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
       type="image/svg+xml"
-      href="assets/branding-images/favicon.svg"
+      href="assets/branding-images/thomas-logo.svg"
     />
     <link
       rel="icon"
       type="image/png"
-      href="assets/branding-images/favicon.png"
+      href="assets/branding-images/thomasfinalogo.png"
     />
     <meta property="og:image" content="screenshot.jpg" />
     <link
@@ -46,7 +46,7 @@
             <a href="index.html">
               <img
                 src="assets/branding-images/thomas-logo.svg"
-                alt="Thomas Gagne's Logo"
+                alt="My personal branding logo, my initials and brand colour, blue."
               />
             </a>
           </li>
@@ -70,7 +70,7 @@
       <div class="hero-headline-wrapper">
         <h1 class="hero-headline">Travel Photography</h1>
         <h5>Taken by a Samsung S23+</h5>
-        <p>Edited through Lightroom | Photoshop</p>
+        <p>Edited through Lightroom & Photoshop</p>
       </div>
     </section>
     <main class="main-work-section">
@@ -257,25 +257,15 @@
     <ul class="footer-global">
       <li class="footer-tagline">
         <h2>Let's Connect!</h2>
-        <p>
-          Feel free to reach out with any questions, collaborations, or just to
-          chat about design.
-        </p>
+        <h6>Message me to discuss work, passion or for converstation</h6>
       </li>
       <li class="footer-highlights">
-        <h2>Awards & Recognition</h2>
+        <h2>Education</h2>
         <ul class="footer-awards-list">
           <li class="footer-item">
-            <a href="#">Dean’s List – Year or Term</a>
-          </li>
-          <li class="footer-item">
-            <a href="#">Your Award – Name of Student Award and Year</a>
-          </li>
-          <li class="footer-item">
-            <a href="#">Honourable Mention – Project or Competition Name</a>
-          </li>
-          <li class="footer-item">
-            <a href="#">Other Recognition or Accolade</a>
+            <a href="https://www.vcad.ca/#gsc.tab=0" target="_blank"
+              >2023 Diploma graduate at Visual College of Art and Design</a
+            >
           </li>
         </ul>
       </li>
@@ -283,25 +273,49 @@
       <li class="footer-contact-social">
         <h2>Contact & Social</h2>
         <ul class="footer-socials-list">
-          <li class="footer-item"><a href="#">Insta</a></li>
-          <li class="footer-item"><a href="#">LinkedIn</a></li>
-          <li class="footer-item"><a href="#">Behance</a></li>
+          <li class="footer-item">
+            <a href="https://www.instagram.com/thommawin/" target="_blank"
+              >Insta</a
+            >
+          </li>
+          <li class="footer-item">
+            <a href="https://www.linkedin.com/in/thomasagagne/" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li class="footer-item">
+            <a href="https://www.behance.net/thomasgagn" target="_blank"
+              >Behance</a
+            >
+          </li>
         </ul>
       </li>
 
       <li class="footer-full-width">
         <p><a href="#top">Smooth scroll to the top</a></p>
-        <p class="footer-fineprint">
-          &copy; <span id="copyright-years">2020-</span>. Hand crafted with
-          <span class="heart">❤</span>
-          by James Neufeld.
-        </p>
+        <h6>Hand crafted by Thomas Gagné</h6>
         <script>
           document.getElementById("copyright-years").textContent +=
             new Date().getFullYear();
         </script>
       </li>
     </ul>
-    <script src="./lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+
+    <div id="myID" class="bottomMenu hide"><a href="#">Back to top</a></div>
+
+    <script>
+      myID = document.getElementById("myID");
+
+      var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 800) {
+          myID.className = "bottomMenu show";
+        } else {
+          myID.className = "bottomMenu hide";
+        }
+      };
+
+      window.addEventListener("scroll", myScrollFunc);
+    </script>
   </body>
 </html>
